@@ -8,15 +8,15 @@ plot(t,x,'.-'),xlabel('Timp [s]'),ylabel('Amplitudine'),title('sin dubla alterna
 %Semnal sinusoidal redresat dubla alternanta cu rezolutie temporara 20ms
 
 figure(2);
-[x,t] = func(0.002, 4,4);    
-plot(t,x,'.-'),xlabel('Timp [s]'),ylabel('Amplitudine'),title('sin dubla alternanta 2ms'),grid;
+[x,t] = func(0.02, 4,4);    
+plot(t,x,'.-'),xlabel('Timp [s]'),ylabel('Amplitudine'),title('sin dubla alternanta 20ms'),grid;
 
 
 %Semnal sinusoidal redresat dubla alternanta cu rezolutie temporara 200ms
 
 figure(3);
-[x,t] = func(0.002, 4,4);    
-plot(t,x,'.-'),xlabel('Timp [s]'),ylabel('Amplitudine'),title('sin dubla alternanta 2ms'),grid;
+[x,t] = func(0.2, 4,4);    
+plot(t,x,'.-'),xlabel('Timp [s]'),ylabel('Amplitudine'),title('sin dubla alternanta 200ms'),grid;
 
 %la un semnal dubla alternanta partea negativa a functiei trece in partea pozitiva 
 %deci functia trebuie pur si simplu sa fie in modul 
