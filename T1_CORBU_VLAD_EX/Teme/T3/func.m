@@ -4,7 +4,7 @@ function [x,t] = func(rez,T,k,trepte) %k este numarul de perioade, trepte este u
     A = trepte(randi(length(trepte), k, 1)); %cream un vector de amplitudini(trepte) random de lungimea numarului de perioade
     for perid = 1:k %pentru fiecare perioada
         t1 = (T*(perid-1)):rez:(T*perid); %generam timpul pe perioada respectiva
-        x1 = A(perid)*square(2*pi*t1, 50); %generam semnalul pe perioada respectiva unde A(perid) este o amplitudine random
+        x1 = A(perid)*square(2*pi*1/T*t1, 50); %generam semnalul pe perioada respectiva unde A(perid) este o amplitudine random
         x = [x,x1]; %adaugam valorile in vectorul de valori x si vecotrul de timp t
         t = [t,t1];
     end
